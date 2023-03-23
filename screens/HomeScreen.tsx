@@ -2,10 +2,7 @@ import React from 'react'
 import { ActivityIndicator, FlatList, Image, StyleSheet, Text, View } from 'react-native'
 import { useBank } from '../hooks/useBank';
 import { themeStyle } from '../theme/theme';
-
-import { Bank } from '../interfaces/interfaces';
 import { ItemRowBank } from '../components/ItemRowBank';
-import { NavigationContainer } from '@react-navigation/native';
 
 
 export const HomeScreen = ({ navigation }) => {
