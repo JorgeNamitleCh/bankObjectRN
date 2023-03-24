@@ -3,7 +3,7 @@
 import 'react-native-gesture-handler';
 
 import * as React from 'react';
-import { Navigation } from './navigation/Navigation';
+import { Navigation } from './src/navigation/Navigation';
 
 
 export const App = () => {
