@@ -1,5 +1,5 @@
 import React from 'react'
-import { ActivityIndicator, FlatList, Image, StyleSheet, Text, View } from 'react-native'
+import { ActivityIndicator, FlatList, Image, StyleSheet, Text, View, Platform } from 'react-native';
 import { useBank } from '../hooks/useBank';
 import { themeStyle } from '../theme/theme';
 import { ItemRowBank } from '../components/ItemRowBank';
@@ -31,6 +31,7 @@ export const HomeScreen = ({ navigation }) => {
                 banks.length > 0 &&
                 <FlatList
                     data={banks}
+                    style={{marginTop: Platform.OS === 'ios' ? 0 : 20}}
                     renderItem={
                         ({ item }) => <ItemRowBank
                             bank={item}
